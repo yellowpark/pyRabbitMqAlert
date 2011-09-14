@@ -4,3 +4,15 @@
 # Receive email alerts when the message threshold is exceeded.
 # code compiled by @yellowpark
 # this code is free to use under a GNU Lesser General Public License http://www.gnu.org/licenses/lgpl.html
+
+This script is supplied without any warranty whatsoever, in the hope that it will be useful.
+
+To use the script:
+
+1. Change line 17:  to = 'me@mydomain.com' # add the email address to send alerts to
+2. Change line 20:  sender = 'no-reply@mydomain.com' # spoof email adress sending the alert email
+3. Change lines 23, 24 and 25: edit smtp_server, smtp_user and smtp_pwd with the correct SMTP details for sending email
+4. Change line 46:  host = '127.0.0.1' # enter the correct host of the RabbitMq server
+5. Change line 47:  port = 5672 # enter the correct port used with the RabbitMq server
+6. Change line 50:  msgsPending = 100 # enter the threshold value for backed up messages, if exceeded the alert email is sent. 
+7. Change line 53:  subscriber = 'file_name.py' # enter the correct filename for the subscriber of this queue (optional)
