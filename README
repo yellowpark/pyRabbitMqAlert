@@ -1,0 +1,6 @@
+# This code checks a RabbitMq message queue to see if messages are backing up.
+# Sometimes a RabbitMq subscriber fails and messages start backing up.  
+# Use this script to set an alert threshold for backed up messages on a queue.
+# Receive email alerts when the message threshold is exceeded.
+# code compiled by @yellowpark
+# this code is free to use under a GNU Lesser General Public License http://www.gnu.org/licenses/lgpl.html
