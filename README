@@ -16,3 +16,4 @@ To use the script:
 5. Change line 47:  port = 5672 # enter the correct port used with the RabbitMq server
 6. Change line 50:  msgsPending = 100 # enter the threshold value for backed up messages, if exceeded the alert email is sent. 
 7. Change line 53:  subscriber = 'file_name.py' # enter the correct filename for the subscriber of this queue (optional)
+8. Execute the script using a cron job 
